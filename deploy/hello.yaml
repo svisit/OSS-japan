@@ -15,7 +15,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: docker.io/saiyam911/ossjapan:sha-9319ddf
+        image: docker.io/hello-world:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: helloservice
-  namespace: demo
+  namespace: aa-team
 spec:
   selector:
     matchLabels:
@@ -27,7 +27,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: helloservice
-  namespace: demo
+  namespace: aa-team
 spec:
   selector:
     app: helloservice
@@ -46,7 +46,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/ingress.class: traefik
   name: demo-app-ingress
-  namespace: demo
+  namespace: aa-team
 spec:
   rules:
   - host: demo.e65f444e-e201-40bd-b0f4-7a18c3601d00.k8s.civo.com
